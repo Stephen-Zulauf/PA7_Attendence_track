@@ -27,9 +27,6 @@
     <ClCompile Include="Menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FileLoader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Data.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -37,6 +34,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="List.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLoaderV2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -56,7 +59,10 @@
     <ClInclude Include="Menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FileLoader.h">
+    <ClInclude Include="FileWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLoaderV2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -64,5 +70,16 @@
     <None Include="classList.csv">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="master.csv">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="allReport.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="threshReport.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

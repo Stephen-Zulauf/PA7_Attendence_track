@@ -53,8 +53,21 @@ public:
 	void setUnits(std::string& nUnits);
 	void setMajor(std::string& nMajor);
 	void setLevel(std::string& nLevel);
+	void newAbs(std::string nAbs);
 
 	void print() const;
+
+	int getRecordNum() const;
+	int getIDNum() const;
+	std::string getlName() const;
+	std::string getfName() const;
+	std::string getEmail() const;
+	std::string getUnits() const;
+	std::string getMajor() const;
+	std::string getLevel() const;
+	int getNumAbs() const;
+	bool hasAbs() const;
+	Stack* getAbs() const;
 
 };
 

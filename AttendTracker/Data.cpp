@@ -30,6 +30,47 @@ void Data::setLevel(std::string& nLevel) {
 	this->level = nLevel;
 
 }
+void Data::newAbs(std::string nAbs) {
+	this->datesAbsence->push(nAbs);
+	this->numAbsence += 1;
+	//std::cout << "num of abs" << this->numAbsence << std::endl;
+}
+
+//getter
+int Data::getRecordNum() const {
+	return this->recordNum;
+}
+int Data::getIDNum() const {
+	return this->ID;
+}
+std::string Data::getlName() const {
+	return this->lastName;
+}
+std::string Data::getfName() const {
+	return this->firstName;
+}
+std::string Data::getEmail() const {
+	return this->email;
+}
+std::string Data::getUnits() const {
+	return this->units;
+}
+std::string Data::getMajor() const {
+	return this->major;
+}
+std::string Data::getLevel() const {
+	return this->level;
+}
+int Data::getNumAbs() const {
+	return this->numAbsence;
+}
+bool Data::hasAbs() const {
+	return this->datesAbsence->isEmpty();
+}
+Stack* Data::getAbs() const {
+	return this->datesAbsence;
+}
+
 /*
 int recordNum = 0;
 	int ID = 0;
@@ -68,4 +109,6 @@ void Data::print() const{
 	std::cout << this->units << std::endl;
 	std::cout << this->major << std::endl;
 	std::cout << this->level << std::endl;
+	this->datesAbsence->print();
+
 }

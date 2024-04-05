@@ -32,6 +32,7 @@ public:
 
 	//getters
 	T* getData();
+	Node<T>* getNext();
 };
 
 template <typename T>
@@ -47,4 +48,9 @@ void Node<T>::setNext(Node<T>* nNode) {
 template <typename T>
 T* Node<T>::getData(){
 	return this->data;
+}
+
+template <typename T>
+Node<T>* Node<T>::getNext() {
+	return this->next;
 }

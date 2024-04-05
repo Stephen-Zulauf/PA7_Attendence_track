@@ -128,7 +128,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Data.cpp" />
-    <ClCompile Include="FileLoader.cpp" />
+    <ClCompile Include="FileLoaderV2.cpp" />
+    <ClCompile Include="FileWriter.cpp" />
     <ClCompile Include="List.cpp" />
     <ClCompile Include="List.h" />
     <ClCompile Include="main.cpp" />
@@ -139,13 +140,19 @@
   <ItemGroup>
     <ClInclude Include="config.h" />
     <ClInclude Include="Data.h" />
-    <ClInclude Include="FileLoader.h" />
+    <ClInclude Include="FileLoaderV2.h" />
+    <ClInclude Include="FileWriter.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Stack.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="classList.csv" />
+    <None Include="master.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="allReport.txt" />
+    <Text Include="threshReport.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

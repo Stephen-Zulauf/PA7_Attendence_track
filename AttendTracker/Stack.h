@@ -23,6 +23,7 @@ public:
 	void push(std::string nData);
 	std::string pop();
 	std::string peek();
+	void print();
 	//returns true if list is empty
 	bool isEmpty();
 };

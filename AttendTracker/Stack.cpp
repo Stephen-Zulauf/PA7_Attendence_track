@@ -17,6 +17,14 @@ std::string Stack::peek() {
 
 	return temp;
 }
+void Stack::print() {
+	std::cout << "[";
+	for (int i = 0; i < this->sMain.size(); i++) {
+		std::cout << this->sMain[i];
+		std::cout << ",";
+	}
+	std::cout << "]";
+}
 //returns true if list is empty
 bool Stack::isEmpty() {
 
